@@ -1,0 +1,68 @@
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>إتمام الشراء - متجرنا الإلكتروني</title>
+  <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html"><img src="logo.png" alt=""></a>
+      <ul>
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="#">عن المتجر</a></li>
+        <li><a href="#">اتصل بنا</a></li>
+      </ul>
+      <div>
+        <a href="#" class="login-btn">تسجيل الدخول</a>
+        <span class="cart-btn">🛒 <span class="cart-count">0</span></span>
+      </div>
+    </div>
+  </nav>
+  <!-- Checkout Section -->
+  <section class="checkout">
+    <div class="container">
+      <div class="checkout-form">
+        <h2>معلومات الشراء</h2>
+        <label for="name">الاسم الكامل</label>
+        <input type="text" id="name" required>
+        <label for="address">العنوان</label>
+        <input type="text" id="address" required>
+        <label for="phone">رقم الهاتف</label>
+        <input type="tel" id="phone" required>
+        <label for="payment">طريقة الدفع</label>
+        <select id="payment" required>
+          <option value="">اختر طريقة الدفع</option>
+          <option value="credit">بطاقة ائتمان</option>
+          <option value="paypal">باي بال</option>
+          <option value="cash">الدفع عند الاستلام</option>
+        </select>
+        <button class="confirm-btn">تأكيد الشراء</button>
+      </div>
+      <div class="cart-summary">
+        <h2>ملخص السلة</h2>
+        <div class="cart-items"></div>
+        <p class="cart-total">الإجمالي: 0 ريال</p>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2025 متجرنا الإلكتروني. جميع الحقوق محفوظة.</p>
+      <div class="footer-links">
+        <a href="#">سياسة الخصوصية</a>
+        <a href="#">شروط الاستخدام</a>
+        <a href="#">اتصل بنا</a>
+      </div>
+    </div>
+  </footer>
+  <script src="Js/checkout.js"></script>
+</body>
+
+</html>

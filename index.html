@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>الصفحة الرئيسية - متجرنا الإلكتروني</title>
+  <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html"><img src="logo.png" alt=""></a>
+      <ul>
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="#">عن المتجر</a></li>
+        <li><a href="#">اتصل بنا</a></li>
+      </ul>
+      <div>
+        <a href="signin.html" class="login-btn">تسجيل الدخول</a>
+        <span class="cart-btn">🛒 <span class="cart-count">0</span></span>
+      </div>
+    </div>
+  </nav>
+  <!-- Cart Modal -->
+  <div class="cart-modal">
+    <div class="cart-modal-content">
+      <span class="close-btn">×</span>
+      <h2>سلة التسوق</h2>
+      <div class="cart-items"></div>
+      <p class="cart-total">الإجمالي: 0 ريال</p>
+      <a href="checkout.html" class="checkout-btn">إتمام الشراء</a>
+    </div>
+  </div>
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h2>مرحبًا بكم في متجرنا الإلكتروني</h2>
+      <p>تسوق أفضل اجهزة اللاب توب بأسعار تنافسية وجودة عالية</p>
+      <a href="#products" class="shop-btn">تسوق الآن</a>
+    </div>
+  </section>
+  <!-- Featured Products -->
+  <section id="products" class="products">
+    <div class="container">
+      <h2>الاجهزة المتوفرة</h2>
+      <div class="products-grid">
+        <div class="product-card">
+          <a href="product.html?id=1">
+            <img decoding="async" src="https://placehold.co/350x300/FF0000/FFFFFF/png" alt="سماعات لاسلكية">
+          </a>
+          <h3 class="title">Dell Latitude 7480</h3>
+          <p class="details">لاب توب dell Latitude 7480 بمعالج intel core i7u الجيل السادس</p>
+          <span class="price">9000 جنيه</span>
+          <div class="quantity-controls">
+            <button class="decrease">-</button>
+            <input type="number" value="1" min="1" class="quantity-input">
+            <button class="increase">+</button>
+          </div>
+          <a href="#" data-price="199" data-name="سماعات لاسلكية" class="add-to-cart">أضف إلى السلة</a>
+        </div>
+        <div class="product-card">
+          <a href="product.html?id=1">
+            <img decoding="async" src="https://placehold.co/450x300/AABBCC/FFFFFF/png" alt="سماعات لاسلكية">
+          </a>
+          <h3 class="title">Dell Latitude 7480</h3>
+          <p class="details">لاب توب dell Latitude 7480 بمعالج intel core i7u الجيل السادس</p>
+          <span class="price">9000 جنيه</span>
+          <div class="quantity-controls">
+            <button class="decrease">-</button>
+            <input type="number" value="1" min="1" class="quantity-input">
+            <button class="increase">+</button>
+          </div>
+          <a href="#" data-price="199" data-name="سماعات لاسلكية" class="add-to-cart">أضف إلى السلة</a>
+        </div>
+        <div class="product-card">
+          <a href="product.html?id=1">
+            <img decoding="async" src="https://placehold.co/250x300/FFF00/FFFF/png" alt="سماعات لاسلكية">
+          </a>
+          <h3 class="title">Dell Latitude 7480</h3>
+          <p class="details">لاب توب dell Latitude 7480 بمعالج intel core i7u الجيل السادس</p>
+          <span class="price">9000 جنيه</span>
+          <div class="quantity-controls">
+            <button class="decrease">-</button>
+            <input type="number" value="1" min="1" class="quantity-input">
+            <button class="increase">+</button>
+          </div>
+          <a href="#" data-price="199" data-name="سماعات لاسلكية" class="add-to-cart">أضف إلى السلة</a>
+        </div>
+        <div class="product-card">
+          <a href="product.html?id=1">
+            <img decoding="async" src="https://placehold.co/350x300/0000FF/FFFFFF/png" alt="سماعات لاسلكية">
+          </a>
+          <h3 class="title">Dell Latitude 7480</h3>
+          <p class="details">لاب توب dell Latitude 7480 بمعالج intel core i7u الجيل السادس</p>
+          <span class="price">9000 جنيه</span>
+          <div class="quantity-controls">
+            <button class="decrease">-</button>
+            <input type="number" value="1" min="1" class="quantity-input">
+            <button class="increase">+</button>
+          </div>
+          <a href="#" data-price="199" data-name="سماعات لاسلكية" class="add-to-cart">أضف إلى السلة</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2025 متجرنا الإلكتروني. جميع الحقوق محفوظة.</p>
+      <div class="footer-links">
+        <a href="#">سياسة الخصوصية</a>
+        <a href="#">شروط الاستخدام</a>
+        <a href="#">اتصل بنا</a>
+      </div>
+    </div>
+  </footer>
+  <script src="Js/home.js"></script>
+</body>
+
+</html>
